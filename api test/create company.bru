@@ -1,0 +1,21 @@
+meta {
+  name: create company
+  type: http
+  seq: 7
+}
+
+post {
+  url: 127.0.0.1:3000/api/v1/companies
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "company": {
+      "name": "my other company",
+      "address": "neuquen, argentina",
+     "established_year": "2020"
+    }
+  }
+}
